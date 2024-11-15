@@ -1,0 +1,18 @@
+<div class="event-container flex flex-col">
+  <wedding-header></wedding-header>
+  <div class="mt-14">
+    <h1 class="font-mono mb-8 text-xl">Nuestro Evento</h1>
+    <div class="ml-6">
+      <google-map height="500px" width="1400px" [options]="options">
+        @for (location of eventLocation; track location) {
+          <map-advanced-marker
+            #markerElem="mapAdvancedMarker"
+            [position]="{lat: location.lat, lng: location.lng}"
+            [content]="location.content"
+            [title]="locationName"
+          />
+        }
+      </google-map>
+    </div>
+  </div>
+</div>

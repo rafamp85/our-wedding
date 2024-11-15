@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  height: 90px;
+  padding: 29px 20px;
+}
+
+.full {
+  width: 50%;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.logo a {
+  font-size: 35px;
+  line-height: 25px;
+  color: #e89e47;
+  font-weight: bold;
+}
+
+.horizontal-menu ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-menu li {
+  padding: 10px;
+}
+
+.horizontal-menu a {
+  cursor: pointer;
+  color: #333;
+  font-weight: bolder;
+}
+
+.horizontal-menu a:hover {
+  color: #0275d8;
+}
+
+.wedding.link.active {
+  color: deeppink;
+}
