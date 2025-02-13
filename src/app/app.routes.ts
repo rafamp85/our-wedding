@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'wedding',
+    path: '',
     loadComponent: () => import('@/wedding/views/wedding-view/wedding-view.component')
   },
   {

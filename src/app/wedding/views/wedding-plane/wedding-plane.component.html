@@ -1,69 +1,63 @@
 <!-- our plane -->
-<div class="plane-container">
-    <div class="font-mono mb-4 text-xl flex flex-col items-center">
-      <img ngSrc="/assets/images/ring.png" width="50" height="30" priority />
-      <h2 class="text-2xl mb-4">Nuestro Viaje</h2>
-      <span class="font-serif text-1xl">Una colección de nuestro viaje juntos convertida en fotos </span>
-    </div>
-    <div class="flex flex-row items-center ml-20">
-      <div class="flex-none w-1/3">
-        <div class="text-center">
-          <figure class="ml-24" >
-            <img
-              ngSrc="/assets/images/travel.jpeg"
-              width="300"
-              height="200"
-              priority
-              class="cursor-pointer"
-              routerLink="/plane-gallery"
-              [queryParams]="{title: 'Viajes'}"
-            />
-          </figure>
-          <h3 class="font-semibold">Restaurantes</h3>
-          <p>Nuestras visitas a restaurantes en ocasiones <br/>
-            solos y otros acompañados de la familia</p>
-        </div>
+<main>
+  <section class="title font-mono mb-4 text-xl flex flex-col items-center">
+    <img ngSrc="/assets/images/ring.png" width="50" height="30" priority />
+    <h2 class="text-2xl mb-4">Nuestro Viaje</h2>
+    <span class="font-serif text-1xl">Una colección de nuestro viaje juntos convertida en fotos </span>
+  </section>
+
+  <section class="travel">
+    <article>
+      <img
+        ngSrc="/assets/images/travel.jpeg"
+        width="300"
+        height="200"
+        sizes="(max-width: 768px) 100vw, 50vw"
+        priority
+        class="cursor-pointer"
+        routerLink="/plane-gallery"
+        [queryParams]="{title: 'Viajes'}"
+      />
+      <h3 class="font-semibold">Restaurantes</h3>
+      <p>Nuestras visitas a restaurantes en ocasiones <br/>
+        solos y otros acompañados de la familia</p>
+    </article>
+
+    <article>
+        <img
+          ngSrc="/assets/images/plane.png"
+          width="300"
+          height="200"
+          sizes="(max-width: 768px) 100vw, 50vw"
+          priority
+          class="cursor-pointer"
+          routerLink="/plane-gallery"
+          [queryParams]="{title: 'Restaurants'}"
+        />
+      <div class="text-center">
+        <h3 class="font-semibold">Playa</h3>
+        <p>De patitas de perro por varias <br/>
+          partes de nuestro México </p>
       </div>
-      <div class="flex-none w-fit ml-16">
-        <div class="plan_bax text_align_center">
-          <figure>
-            <img
-              ngSrc="/assets/images/plane.png"
-              width="300"
-              height="200"
-              priority
-              class="cursor-pointer"
-              routerLink="/plane-gallery"
-              [queryParams]="{title: 'Restaurants'}"
-            />
-          </figure>
-          <div class="text-center">
-            <h3 class="font-semibold">Playa</h3>
-            <p>De patitas de perro por varias <br/>
-              partes de nuestro México </p>
-          </div>
-        </div>
+    </article>
+
+    <article>
+      <img
+        ngSrc="/assets/images/restaurante.jpeg"
+        width="300"
+        height="200"
+        sizes="(max-width: 768px) 100vw, 50vw"
+        priority
+        class="cursor-pointer"
+        routerLink="/plane-gallery"
+        [queryParams]="{title: 'Playa'}"
+      />
+      <div class="text-center">
+        <h3 class="font-semibold">Convivencias</h3>
+        <p>Un catalogo de nuestras convivencias <br/>
+          familiares y de amigos</p>
       </div>
-      <div class="flex-none w-1/3">
-        <div class="plan_bax text_align_center">
-          <figure class="ml-24">
-            <img
-              ngSrc="/assets/images/restaurante.jpeg"
-              width="300"
-              height="200"
-              priority
-              class="cursor-pointer"
-              routerLink="/plane-gallery"
-              [queryParams]="{title: 'Playa'}"
-            />
-          </figure>
-          <div class="text-center">
-            <h3 class="font-semibold">Convivencias</h3>
-            <p>Un catalogo de nuestras convivencias <br/>
-              familiares y de amigos</p>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
+    </article>
+  </section>
+</main>
 <!-- our plane -->

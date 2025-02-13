@@ -1,7 +1,37 @@
-.plane-container {
+main {
   background: url("public/assets/images/plan_bg.png");
-  //background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 30px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
+
+main .title {
+  text-align: center;
+}
+
+.travel {
+  width: 90%;
+  margin: 0 auto;
+  padding: 25px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  text-align: center;
+  gap: 30px;
+}
+
+.travel article {
+  border: 10px solid transparent;
+  border-image: url("/assets/images/border.png") 30 stretch;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.travel article img {
+  margin: 0 auto;
+}
+

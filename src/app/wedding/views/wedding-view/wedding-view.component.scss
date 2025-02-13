@@ -1,4 +1,10 @@
-.header {
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
   background: url("public/assets/images/banner2.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
 }

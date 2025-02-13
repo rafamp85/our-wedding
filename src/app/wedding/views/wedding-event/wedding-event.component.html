@@ -1,9 +1,9 @@
-<div class="event-container flex flex-col">
+<main>
   <wedding-header></wedding-header>
   <div class="mt-14">
     <h1 class="font-mono mb-8 text-xl">Nuestro Evento</h1>
     <div class="ml-6">
-      <google-map height="500px" width="1400px" [options]="options">
+      <google-map height="500px" width="100%" [options]="options" class="map">
         @for (location of eventLocation; track location) {
           <map-advanced-marker
             #markerElem="mapAdvancedMarker"
@@ -15,4 +15,4 @@
       </google-map>
     </div>
   </div>
-</div>
+</main>
